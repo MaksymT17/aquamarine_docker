@@ -8,6 +8,5 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get -y update && apt-get install -y
 
 # Install the Clang compiler
-RUN apt-get -y install git g++ cmake python3 valgrind
+RUN apt-get -y install git g++ cmake python3 valgrind gcovr sqlite3
 RUN git clone https://github.com/MaksymT17/aquamarine.git
-
